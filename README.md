@@ -6,8 +6,12 @@ Als je een nieuwe publicatie wilt starten, lees dan eerst de instructies in de R
 
 # Best Practices en aanvullingen voor NL-SBB - Standaard voor het beschrijven van begrippen
 
-Deze repository bevat best practices en aanvullingen op de NL-SBB Standaard voor het beschrijven van begrippen. De [NL-SBB standaard](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/) wordt beheerd door Geonovum (zie de [NL-SBB github repository](https://github.com/geonovum/NL-SBB/)). 
+Deze repository bevat het ReSpec document dat de best practices beschrijft voor NL-SBB.
 
-De NL-SBB werkgroep doet het inhoudelijke beheer van de standaard en van de best practices, die in deze repository zijn opgeslagen.  
+De werkversie van de best practice is te vinden op https://geonovum.github.io/nl-sbb-bp
 
-De werkversie van de NL-SBB best practices zijn hier te bekijken: https://geonovum.github.io/nl-sbb-bp
+De Standaard voor het bechrijven van begrippen (NL-SBB) is te vinden op:
+
+- Gepubliceerde stabiele versie: https://docs.geostandaarden.nl/nl-sbb/nl-sbb/
+- Werkversie: https://geonovum.github.io/NL-SBB
+- Github repository: https://github.com/Geonovum/NL-SBB
