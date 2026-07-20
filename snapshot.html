@@ -853,13 +853,13 @@ Een belangrijk aspect voor een stelsel is het in een tijdcontext kunnen relatere
 <li>Dataset = <code>dcat:Dataset</code>.</li>
 </ul>
 <section id="begrippenkader-als-dataset"><div class="header-wrapper"><h6 id="x1-5-4-1-1-begrippenkader-als-dataset"><bdi class="secno">1.5.4.1.1 </bdi>Begrippenkader als dataset</h6><a class="self-link" href="#begrippenkader-als-dataset" aria-label="Permalink for Section 1.5.4.1.1"></a></div>
-<p>Een object is beschreven in een gegevensobject en dit gegevensobject is onderdeel van een dataset. Dat is het patroon wat gehanteerd wordt voor het versiebeheer van begrippen(kaders).</p>
-<p>Cognitief maken mensen niet altijd een onderscheid tussen het ding-als-concept (“begrip”, “begrippenkader”, “taxonomie”, “lijstje”) en het ding-als-informatieobject (waar dan dezelfde woorden worden gebruikt). Als dit onderscheid minder belangrijk is kan er gekozen worden om dat onderscheid niet te maken. We volgen dan een ander patroon voor versiebeheer. Technisch gezien leidt dit patroon tot punning. Het begrippenkader bevat begrippen én begripsbeschrijvingen. Dit maakt het begrippenkader zowel een 'conceptueel object' als een 'informatieobject'. Dit is een variatie op Variant B waarbij het begrippenkader én de begrippenkaderbeschrijving én de beheereenheid (of publicatieeenheid) dezelfde identiteit hebben.</p>
-<p>Indien een begrippenkader dus ook beoogd is als de dataset, dan geldt bovendien <em>ook</em> nog de taalbinding:</p>
+<p>In de paragraaf hierboven is onderscheid gemaakt tussen begrippenkader en dataset. Als dit onderscheid minder belangrijk is kan er gekozen worden om dat onderscheid niet te maken. Indien een begrippenkader ook beoogd is als de dataset, dan geldt de taalbinding:</p>
 <ul>
 <li>Begrippenkader = <code>skos:ConceptScheme</code> EN <code>dcat:Dataset</code></li>
 </ul>
-<p>Het term "Begrippenkader" en synoniemen als "Taxonomie", "Thesaurus" of "Begrippenstelsel" zijn daarmee zowel bruikbaar voor situaties waarbij een abstracte verzameling van begrippen wordt bedoeld (via <code>skos:inScheme</code>) en voor situaties waar bij een verzameling van beschrijvingen van dergelijke begrippen wordt bedoeld (via <code>dcat:Dataset</code>). Alleen als in de taalbinding beide aanwezig zijn, is sprake van <em>punning</em> en wordt zowel een abstracte verzameling van begrippen bedoeld als een verzameling van beschrijvingen. Dit is een ruime opvatting van de definitie van begrippenkader maar dit wordt niet uitgesloten in SBB.</p>
+<p>In het algemeen kun je stellen dat een object wordt beschreven in een gegevensobject en dit gegevensobject is onderdeel van een dataset. Dat is ook het patroon dat gehanteerd wordt voor het versiebeheer van begrippen(kaders).</p>
+<p>Cognitief maken mensen niet altijd een onderscheid tussen het ding-als-concept (“begrip”, “begrippenkader”, “taxonomie”, “lijstje”) en het ding-als-gegevensobject (waar dan dezelfde woorden worden gebruikt). We volgen dan een ander patroon voor versiebeheer. Het begrippenkader bevat begrippen én begripsbeschrijvingen. Dit maakt het begrippenkader zowel een 'conceptueel object' als een 'informatieobject'. Dit is een variatie op Variant B waarbij het begrippenkader én de begrippenkaderbeschrijving én de beheereenheid (of publicatieeenheid) dezelfde identiteit hebben.</p>
+<p>Het term "Begrippenkader" en synoniemen als "Taxonomie", "Thesaurus" of "Begrippenstelsel" zijn daarmee zowel bruikbaar voor situaties waarbij een abstracte verzameling van begrippen wordt bedoeld (via <code>skos:inScheme</code>) en voor situaties waar bij een verzameling van beschrijvingen van dergelijke begrippen wordt bedoeld (via <code>dcat:Dataset</code>). Alleen als in de taalbinding beide aanwezig zijn, wordt zowel een abstracte verzameling van begrippen bedoeld als een verzameling van beschrijvingen. Dit is een ruime opvatting van de definitie van begrippenkader maar dit wordt niet uitgesloten in SBB.</p>
 <blockquote>
 <p>Advies is om expliciet aan te geven bij de beschrijving van een begrippenkader of ook sprake is van een eenheid van beheer, publicatie of herkomst.</p>
 </blockquote>
@@ -874,14 +874,14 @@ Een belangrijk aspect voor een stelsel is het in een tijdcontext kunnen relatere
 </section><section id="voorbeelduitwerkingen"><div class="header-wrapper"><h5 id="x1-5-4-3-voorbeelduitwerkingen"><bdi class="secno">1.5.4.3 </bdi>Voorbeelduitwerkingen</h5><a class="self-link" href="#voorbeelduitwerkingen" aria-label="Permalink for Section 1.5.4.3"></a></div>
 <p>Voor de drie gedefinieerde variaties geven we een voorbeelduitwerking:</p>
 <ul>
-<li><a href="./sessies/metadata/versiebeheer/voorbeelduitwerkingen/VariantA.ttl">Variant A</a> De begripsbeschrijving is de eenheid van beheer</li>
-<li><a href="./sessies/metadata/versiebeheer/voorbeelduitwerkingen/variantB.ttl">Variant B</a> Het begrippenkader komt overeen met de eenheid van beheer</li>
-<li><a href="./sessies/metadata/versiebeheer/voorbeelduitwerkingen/VariantC.trig">Variant C</a> Een deel van een complete begripsbeschrijving als eenheid van beheer</li>
+<li><a href="voorbeelduitwerkingen/VariantA.ttl">Variant A</a> De begripsbeschrijving is de eenheid van beheer</li>
+<li><a href="voorbeelduitwerkingen/variantB.ttl">Variant B</a> Het begrippenkader komt overeen met de eenheid van beheer</li>
+<li><a href="voorbeelduitwerkingen/VariantC.trig">Variant C</a> Een deel van een complete begripsbeschrijving als eenheid van beheer</li>
 </ul>
 <p>Aanvullend geven we twee extra uitwerkingen:</p>
 <ul>
-<li><a href="./sessies/metadata/versiebeheer/voorbeelduitwerkingen/VariantB1.ttl">Variant B.1</a> Het begrippenkader is óók de eenheid van beheer</li>
-<li><a href="./sessies/metadata/versiebeheer/voorbeelduitwerkingen/VariantB2.ttl">Variant B.2</a> De beheereenheid is een verzameling begripsbeschrijvingen die niet overeenkomt met het begrippenkader</li>
+<li><a href="voorbeelduitwerkingen/VariantB1.ttl">Variant B.1</a> Het begrippenkader is óók de eenheid van beheer</li>
+<li><a href="voorbeelduitwerkingen/VariantB2.ttl">Variant B.2</a> De beheereenheid is een verzameling begripsbeschrijvingen die niet overeenkomt met het begrippenkader</li>
 </ul>
 </section></section></section></section>
   <section class="informative" id="over-het-adopteren-van-nl-sbb-en-het-verbinden-met-skos-begrippen"><div class="header-wrapper"><h2 id="x2-over-het-adopteren-van-nl-sbb-en-het-verbinden-met-skos-begrippen"><bdi class="secno">2. </bdi>Over het adopteren van NL-SBB en het verbinden met SKOS begrippen</h2><a class="self-link" href="#over-het-adopteren-van-nl-sbb-en-het-verbinden-met-skos-begrippen" aria-label="Permalink for Section 2."></a></div><p><em>Dit onderdeel is niet-normatief.</em></p>

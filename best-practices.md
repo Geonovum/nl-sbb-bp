@@ -385,14 +385,14 @@ Begrippen kunnen in meerdere begrippenkaders voorkomen. Maar worden in één dat
 
 ##### Begrippenkader als dataset
 
-Een object is beschreven in een gegevensobject en dit gegevensobject is onderdeel van een dataset. Dat is het patroon wat gehanteerd wordt voor het versiebeheer van begrippen(kaders).
-
-Cognitief maken mensen niet altijd een onderscheid tussen het ding-als-concept (“begrip”, “begrippenkader”, “taxonomie”, “lijstje”) en het ding-als-informatieobject (waar dan dezelfde woorden worden gebruikt). Als dit onderscheid minder belangrijk is kan er gekozen worden om dat onderscheid niet te maken. We volgen dan een ander patroon voor versiebeheer. Technisch gezien leidt dit patroon tot punning. Het begrippenkader bevat begrippen én begripsbeschrijvingen. Dit maakt het begrippenkader zowel een 'conceptueel object' als een 'informatieobject'. Dit is een variatie op Variant B waarbij het begrippenkader én de begrippenkaderbeschrijving én de beheereenheid (of publicatieeenheid) dezelfde identiteit hebben.
-
-Indien een begrippenkader dus ook beoogd is als de dataset, dan geldt bovendien *ook* nog de taalbinding:
+In de paragraaf hierboven is onderscheid gemaakt tussen begrippenkader en dataset. Als dit onderscheid minder belangrijk is kan er gekozen worden om dat onderscheid niet te maken. Indien een begrippenkader ook beoogd is als de dataset, dan geldt de taalbinding:
 - Begrippenkader = `skos:ConceptScheme` EN `dcat:Dataset`
 
-Het term "Begrippenkader" en synoniemen als "Taxonomie", "Thesaurus" of "Begrippenstelsel" zijn daarmee zowel bruikbaar voor situaties waarbij een abstracte verzameling van begrippen wordt bedoeld (via `skos:inScheme`) en voor situaties waar bij een verzameling van beschrijvingen van dergelijke begrippen wordt bedoeld (via `dcat:Dataset`). Alleen als in de taalbinding beide aanwezig zijn, is sprake van *punning* en wordt zowel een abstracte verzameling van begrippen bedoeld als een verzameling van beschrijvingen. Dit is een ruime opvatting van de definitie van begrippenkader maar dit wordt niet uitgesloten in SBB.
+In het algemeen kun je stellen dat een object wordt beschreven in een gegevensobject en dit gegevensobject is onderdeel van een dataset. Dat is ook het patroon dat gehanteerd wordt voor het versiebeheer van begrippen(kaders).
+
+Cognitief maken mensen niet altijd een onderscheid tussen het ding-als-concept (“begrip”, “begrippenkader”, “taxonomie”, “lijstje”) en het ding-als-gegevensobject (waar dan dezelfde woorden worden gebruikt). We volgen dan een ander patroon voor versiebeheer. Het begrippenkader bevat begrippen én begripsbeschrijvingen. Dit maakt het begrippenkader zowel een 'conceptueel object' als een 'informatieobject'. Dit is een variatie op Variant B waarbij het begrippenkader én de begrippenkaderbeschrijving én de beheereenheid (of publicatieeenheid) dezelfde identiteit hebben.
+
+Het term "Begrippenkader" en synoniemen als "Taxonomie", "Thesaurus" of "Begrippenstelsel" zijn daarmee zowel bruikbaar voor situaties waarbij een abstracte verzameling van begrippen wordt bedoeld (via `skos:inScheme`) en voor situaties waar bij een verzameling van beschrijvingen van dergelijke begrippen wordt bedoeld (via `dcat:Dataset`). Alleen als in de taalbinding beide aanwezig zijn, wordt zowel een abstracte verzameling van begrippen bedoeld als een verzameling van beschrijvingen. Dit is een ruime opvatting van de definitie van begrippenkader maar dit wordt niet uitgesloten in SBB.
 
 > Advies is om expliciet aan te geven bij de beschrijving van een begrippenkader of ook sprake is van een eenheid van beheer, publicatie of herkomst.
 
@@ -407,11 +407,11 @@ Voor de taalbinding van herkomstinformatie wordt gebruik gemaakt van PROV:
 
 Voor de drie gedefinieerde variaties geven we een voorbeelduitwerking:
 
-- [Variant A](./sessies/metadata/versiebeheer/voorbeelduitwerkingen/VariantA.ttl) De begripsbeschrijving is de eenheid van beheer
-- [Variant B](./sessies/metadata/versiebeheer/voorbeelduitwerkingen/variantB.ttl) Het begrippenkader komt overeen met de eenheid van beheer
-- [Variant C](./sessies/metadata/versiebeheer/voorbeelduitwerkingen/VariantC.trig) Een deel van een complete begripsbeschrijving als eenheid van beheer
+- [Variant A](voorbeelduitwerkingen/VariantA.ttl) De begripsbeschrijving is de eenheid van beheer
+- [Variant B](voorbeelduitwerkingen/variantB.ttl) Het begrippenkader komt overeen met de eenheid van beheer
+- [Variant C](voorbeelduitwerkingen/VariantC.trig) Een deel van een complete begripsbeschrijving als eenheid van beheer
 
 Aanvullend geven we twee extra uitwerkingen:
 
-- [Variant B.1](./sessies/metadata/versiebeheer/voorbeelduitwerkingen/VariantB1.ttl) Het begrippenkader is óók de eenheid van beheer
-- [Variant B.2](./sessies/metadata/versiebeheer/voorbeelduitwerkingen/VariantB2.ttl) De beheereenheid is een verzameling begripsbeschrijvingen die niet overeenkomt met het begrippenkader
+- [Variant B.1](voorbeelduitwerkingen/VariantB1.ttl) Het begrippenkader is óók de eenheid van beheer
+- [Variant B.2](voorbeelduitwerkingen/VariantB2.ttl) De beheereenheid is een verzameling begripsbeschrijvingen die niet overeenkomt met het begrippenkader
