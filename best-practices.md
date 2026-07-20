@@ -409,11 +409,11 @@ Voor de taalbinding van herkomstinformatie wordt gebruik gemaakt van PROV:
 
 Voor de drie gedefinieerde variaties geven we een voorbeelduitwerking:
 
-- [Variant A](./sessies/metadata/versiebeheer/voorbeelduitwerkingen/VariantA.ttl) De begripsbeschrijving is de eenheid van beheer
-- [Variant B](./sessies/metadata/versiebeheer/voorbeelduitwerkingen/variantB.ttl) Het begrippenkader komt overeen met de eenheid van beheer
-- [Variant C](./sessies/metadata/versiebeheer/voorbeelduitwerkingen/VariantC.trig) Een deel van een complete begripsbeschrijving als eenheid van beheer
+- [Variant A](voorbeelduitwerkingen/VariantA.ttl) De begripsbeschrijving is de eenheid van beheer
+- [Variant B](voorbeelduitwerkingen/variantB.ttl) Het begrippenkader komt overeen met de eenheid van beheer
+- [Variant C](voorbeelduitwerkingen/VariantC.trig) Een deel van een complete begripsbeschrijving als eenheid van beheer
 
 Aanvullend geven we twee extra uitwerkingen:
 
-- [Variant B.1](./sessies/metadata/versiebeheer/voorbeelduitwerkingen/VariantB1.ttl) Het begrippenkader is óók de eenheid van beheer
-- [Variant B.2](./sessies/metadata/versiebeheer/voorbeelduitwerkingen/VariantB2.ttl) De beheereenheid is een verzameling begripsbeschrijvingen die niet overeenkomt met het begrippenkader
+- [Variant B.1](voorbeelduitwerkingen/VariantB1.ttl) Het begrippenkader is óók de eenheid van beheer
+- [Variant B.2](voorbeelduitwerkingen/VariantB2.ttl) De beheereenheid is een verzameling begripsbeschrijvingen die niet overeenkomt met het begrippenkader
