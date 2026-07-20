@@ -385,16 +385,14 @@ Begrippen kunnen in meerdere begrippenkaders voorkomen. Maar worden in één dat
 
 ##### Begrippenkader als dataset
 
-In de paragraaf hierboven is onderscheid gemaakt tussen begrippenkader en dataset. Als dit onderscheid minder belangrijk is kan er gekozen worden om dat onderscheid niet te maken. Indien een begrippenkader ook beoogd is als de dataset, dan geldt *ook* nog de taalbinding:
+In de paragraaf hierboven is onderscheid gemaakt tussen begrippenkader en dataset. Als dit onderscheid minder belangrijk is kan er gekozen worden om dat onderscheid niet te maken. Indien een begrippenkader ook beoogd is als de dataset, dan geldt de taalbinding:
 - Begrippenkader = `skos:ConceptScheme` EN `dcat:Dataset`
 
 In het algemeen kun je stellen dat een object wordt beschreven in een gegevensobject en dit gegevensobject is onderdeel van een dataset. Dat is ook het patroon dat gehanteerd wordt voor het versiebeheer van begrippen(kaders).
 
 Cognitief maken mensen niet altijd een onderscheid tussen het ding-als-concept (“begrip”, “begrippenkader”, “taxonomie”, “lijstje”) en het ding-als-gegevensobject (waar dan dezelfde woorden worden gebruikt). We volgen dan een ander patroon voor versiebeheer. Het begrippenkader bevat begrippen én begripsbeschrijvingen. Dit maakt het begrippenkader zowel een 'conceptueel object' als een 'informatieobject'. Dit is een variatie op Variant B waarbij het begrippenkader én de begrippenkaderbeschrijving én de beheereenheid (of publicatieeenheid) dezelfde identiteit hebben.
 
-<aside class="note">Dit patroon voor versiebeheer, waarbij geen onderscheid wordt gemaakt tussen het object en het gegevensobject, wordt in technisch jargon ook wel <em>punning</em> genoemd. </aside>
-
-Het term "Begrippenkader" en synoniemen als "Taxonomie", "Thesaurus" of "Begrippenstelsel" zijn daarmee zowel bruikbaar voor situaties waarbij een abstracte verzameling van begrippen wordt bedoeld (via `skos:inScheme`) en voor situaties waar bij een verzameling van beschrijvingen van dergelijke begrippen wordt bedoeld (via `dcat:Dataset`). Alleen als in de taalbinding beide aanwezig zijn, is sprake van *punning* en wordt zowel een abstracte verzameling van begrippen bedoeld als een verzameling van beschrijvingen. Dit is een ruime opvatting van de definitie van begrippenkader maar dit wordt niet uitgesloten in SBB.
+Het term "Begrippenkader" en synoniemen als "Taxonomie", "Thesaurus" of "Begrippenstelsel" zijn daarmee zowel bruikbaar voor situaties waarbij een abstracte verzameling van begrippen wordt bedoeld (via `skos:inScheme`) en voor situaties waar bij een verzameling van beschrijvingen van dergelijke begrippen wordt bedoeld (via `dcat:Dataset`). Alleen als in de taalbinding beide aanwezig zijn, wordt zowel een abstracte verzameling van begrippen bedoeld als een verzameling van beschrijvingen. Dit is een ruime opvatting van de definitie van begrippenkader maar dit wordt niet uitgesloten in SBB.
 
 > Advies is om expliciet aan te geven bij de beschrijving van een begrippenkader of ook sprake is van een eenheid van beheer, publicatie of herkomst.
 
