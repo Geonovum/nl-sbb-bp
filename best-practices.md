@@ -3,6 +3,7 @@
 ## Begrippen
 ### Termen
 <div class="practice"><p class="practicedesc"><span class="practicelab">Gangbare conventies voor het beschrijven van termen (voorkeurstermen, alternatieve termen) zijn:
+<p>Deze conventies gaan over de termen, dus de namen waarmee een begrip wordt aangeduid. Ze gaan niet over de URI van het begrip.</p>
 <ul>
 <li>Gebruik een zelfstandig naamwoord, eventueel gekwalificeerd met een bijvoeglijk naamwoord. Gebruik geen bijwoorden, lidwoorden en voorzetsels.</li>
 <li>Vermijd dubbele adjectieven.</li>
