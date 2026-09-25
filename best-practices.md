@@ -88,7 +88,7 @@ In de praktijk blijkt het heel lastig om goede definities op te stellen. Dit voo
 Dit voorschrift gaat uit van de begrippen zoals gedefinieerd in het SMP/SCM Metamodel.
 
 #### BKR
-Het Bureau Krediet Registratie (BKR) gebruikt https://www.brsolutions.com/wp-content/uploads/2016/10/How-to-Define-Business-Terms-Primer.pdf.
+Het Bureau Krediet Registratie (BKR) gebruikt de primer [How to Define Business Terms](http://web.archive.org/web/20240325183431/https://www.brsolutions.com/wp-content/uploads/2016/10/How-to-Define-Business-Terms-Primer.pdf) van Business Rule Solutions. De oorspronkelijke publicatie is niet meer online; de link verwijst naar een archiefkopie.
 
 
 
