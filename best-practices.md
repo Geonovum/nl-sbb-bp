@@ -12,7 +12,7 @@
 <li>Schrijf een term in kleine letters, zoals in een zin, behalve bij eigennamen.</li>
 <li>Gebruik Latijnse alfabetische karakters (UTF8). Gebruik geen leestekens (streepjes, punten, komma's en dergelijke).</li>
 <li>Gebruik enkelvoud. Dit geldt specifiek voor Duits, Frans, Nederlands, niet voor het Engels.</li>
-<li>Gebruik standaard spelling, conform het groene boekje.</li>
+<li>Gebruik de officiële spelling van de <a href="https://woordenlijst.org">Woordenlijst Nederlandse Taal</a> (het groene boekje). Gebruik ook de bijbehorende <a href="https://woordenlijst.org/leidraden">Leidraden</a>, bijvoorbeeld voor het schrijven van samenstellingen met Engelse leenwoorden: "datalineage" en niet "data lineage" (<a href="https://woordenlijst.org/zoeken/?leidraad=12-1">leidraad 12-1</a>).</li>
 </ul>
 </p></span></div>
 
