@@ -30,7 +30,7 @@ let respecConfig = {
     shortName: "bp",
     
     //edDraftURI = De URI van de draft version. Deze wordt automatisch afgeleid van de github URI; maar kan hier overschreven worden. 
-    edDraftURI: ["https://geonovum.github.io", "/", "pubDomain", "/", "bp"],
+    edDraftURI: "https://geonovum.github.io/nl-sbb-bp/",
   
     //-- publishDate is verplicht -------------------------------------------------------
     //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
@@ -110,7 +110,7 @@ let respecConfig = {
   
     // TODO: Vul de github URL in.
     //neem hier de URL van de github repository op waar het respec document in staat
-    github: "https://github.com/Geonovum/NL-SBB",
+    github: "https://github.com/Geonovum/nl-sbb-bp",
     // Create PDF and link to file in header (optional):
     // TODO: Change the filename as preferred.
    // alternateFormats: [
