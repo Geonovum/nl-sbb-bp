@@ -110,7 +110,7 @@ ex:ingezetene a skos:Concept ;
 
 Op deze manier is goed aangeven waar de betekenis van het begrip (gedocumenteerd als definitie) op gebaseerd is. Verder is er geen informatie over de bron. Wanneer de bron is beschreven in RDF is deze informatie er wel en kan dit meegenomen worden in de interpretatie van het begrip. 
 
-Wanneer een bron als linked data op het web ontsloten is neem je als waarde van bronverwijzing de URI van de bron. Dit kan bijvoorbeeld een instantie van <code>foaf:Document</code> of <code>dct:BibliographicResource</code> zijn. Hoe deze precies is beschreven is maakt voor de bronverwijzing niet uit, maar binnen dit profiel wordt de [specificatie voor bronnen](#specificatie-brondocument) aangeraden.
+Wanneer een bron als linked data op het web ontsloten is neem je als waarde van bronverwijzing de URI van de bron. Dit kan bijvoorbeeld een instantie van <code>foaf:Document</code> of <code>dct:BibliographicResource</code> zijn. Hoe deze precies is beschreven is maakt voor de bronverwijzing niet uit, maar binnen dit profiel wordt de [specificatie voor bronnen](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#specificatie-brondocument) aangeraden.
 
 Het komt ook voor dat de bron niet vindbaar is op het web en/of niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken. De beschrijving bestaat minimaal uit een aanduiding van het brondocument en de naam. Als aanduiding van het brondocument kunnen in Linked data URI's of blanknodes gebruikt worden. Deze aanduiding is een directe identicatie van het brondocument (zie ook [Fundamentals of Linked Data Modeling](https://bp4mc2.org/modeling/)). De beheerder van het begrip maakt een URI (of blank node) voor het brondocument wat het gebruikt, maar waar het niet de eigenaar van is. Dit is conform een van de basisprincipes van Linked Data, *Anybody can say anything about anything*. Deze URI kan alleen niet direct gebruikt worden om een mensleesbaar document te vinden. Wanneer de bron vindbaar is op het web kan foaf:page (<a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-url">url</a>) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation (<a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-bronverwijzing">bronverwijzing</a>) gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een <a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-url">url</a> als een <a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-bronverwijzing">bronverwijzing</a> kent.
 
@@ -221,7 +221,7 @@ Aanbevelingen:
 ### Hergebruik
 Het hergebruiken van begrippen is het opnemen van begrippen in verschillende begrippenkaders. In tegenstelling tot bij harmonisatie, waar twee losse verzamelingen van begrippen aan elkaar gerelateerd worden door extra relaties te leggen, wordt bij hergebruik één begrip aan verschillende begrippenkaders toegevoegd. In deze zin commiteer je volledig aan de beschrijving van het begrip uit een ander begrippenkader. Dit is afgebeeld in het volgende diagram.
 
-![](respec/media/hergebruik.png "Datastructuren hergebruik en harmonisatie")
+![](media/hergebruik.png "Datastructuren hergebruik en harmonisatie")
 
 Begrippen komen zo terug in verschillende contexten. Dit is een algemene good-practice omdat we hiermee contexten integreren (waarmee we expliciet dezelfde taal spreken) maar ook omdat we hiermee contexten kunnen modularizeren (conform het Don't Repeat Yourself principe (DRY)).
 
@@ -403,11 +403,11 @@ Voor de taalbinding van herkomstinformatie wordt gebruik gemaakt van PROV:
 
 Voor de drie gedefinieerde variaties geven we een voorbeelduitwerking:
 
-- [Variant A](voorbeelduitwerkingen/VariantA.ttl) De begripsbeschrijving is de eenheid van beheer
-- [Variant B](voorbeelduitwerkingen/variantB.ttl) Het begrippenkader komt overeen met de eenheid van beheer
-- [Variant C](voorbeelduitwerkingen/VariantC.trig) Een deel van een complete begripsbeschrijving als eenheid van beheer
+- [Variant A](data/voorbeelduitwerkingen/VariantA.ttl) De begripsbeschrijving is de eenheid van beheer
+- [Variant B](data/voorbeelduitwerkingen/variantB.ttl) Het begrippenkader komt overeen met de eenheid van beheer
+- [Variant C](data/voorbeelduitwerkingen/VariantC.trig) Een deel van een complete begripsbeschrijving als eenheid van beheer
 
 Aanvullend geven we twee extra uitwerkingen:
 
-- [Variant B.1](voorbeelduitwerkingen/VariantB1.ttl) Het begrippenkader is óók de eenheid van beheer
-- [Variant B.2](voorbeelduitwerkingen/VariantB2.ttl) De beheereenheid is een verzameling begripsbeschrijvingen die niet overeenkomt met het begrippenkader
+- [Variant B.1](data/voorbeelduitwerkingen/VariantB1.ttl) Het begrippenkader is óók de eenheid van beheer
+- [Variant B.2](data/voorbeelduitwerkingen/VariantB2.ttl) De beheereenheid is een verzameling begripsbeschrijvingen die niet overeenkomt met het begrippenkader
