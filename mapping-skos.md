@@ -39,12 +39,12 @@ De aanscherpingen en aanvullingen zijn weergegeven in de volgende tabel.
 | voorkeursterm                     | skos:prefLabel             | **rdf:langString**  | plain literal      | **1..\***             | 0..*               |
 | alternatieve term                 | skos:altLabel              | **rdf:langString**  | plain literal      | 0..*                 | 0..*               |
 | zoekterm                          | skos:hiddenLabel           | **rdf:langString**  | plain literal      | 0..*                 | 0..*               |
-| code                              | skos:notation              | sh:Literal          | typed literal      | 0..*                 | 0..*               |
+| code                              | skos:notation              | sh:Literal          | rdfs:Resource (conventie: typed literal) | 0..*                 | 0..*               |
 | in kader                          | skos:inScheme              | skos:ConceptScheme  | skos:ConceptScheme | **1..\***             | 0..*               |
 | is topbegrip van                  | skos:topConceptOf          | skos:ConceptScheme  | skos:ConceptScheme | 0..*                 | 0..*               |
 | **uitleg**                        | rdfs:comment               | rdf:langString      | --                 | 0..*                 | --                 |
 | definitie                         | skos:definition            | **rdf:langString**  | rdfs:Resource      | **1..\***             | 0..*               |
-| **heeft bron**                    | dct:source                 | foaf:Document       | --                 | 0..*                 | --                 |
+| **heeft bron**                    | dct:source                 | rdfs:Resource (aanbevolen: foaf:Document) | --                 | 0..*                 | --                 |
 | heeft bovenliggend begrip         | skos:broader               | skos:Concept        | skos:Concept       | 0..*                 | 0..*               |
 | heeft onderliggend begrip         | skos:narrower              | skos:Concept        | skos:Concept       | 0..*                 | 0..*               |
 | is gerelateerd aan                | skos:related               | skos:Concept        | skos:Concept       | 0..*                 | 0..*               |
@@ -84,8 +84,8 @@ Aanvullingen
 - Een collectie MOET een naam hebben. SKOS doet hier geen uitspraken over.
 - Een collectie MAG een uitleg hebben. SKOS doet hier geen uitspraken over.
 
-Aanscherpingen
-- NL-SBB doet geen uitspraken over geordende collecties. SKOS wel.
+Beperkingen
+- NL-SBB kent geen geordende collecties (`skos:OrderedCollection` met `skos:memberList`). SKOS wel.
 
 | NL-SBB - term | SKOS - term | NL-SBB waardebereik             | SKOS waardebereik               | NL-SBB kardinaliteit | SKOS-kardinaliteit |
 | ------------- | ----------- | ------------------------------- | ------------------------------- | -------------------- | ------------------ |
@@ -131,7 +131,7 @@ Met name de aanscherpingen, die reeds benoemd zijn, kunnen aanvullende aandacht 
 Wanneer een SKOS-begrip niet conform het toepassingsprofiel van NL-SBB blijkt (bijvoorbeeld omdat deze geen definitie heeft) is menselijke tussenkomst nodig om de problemen op te lossen.
 
 Daarnaast biedt NL-SBB kaders voor het vastleggen van informatie die niet in SKOS worden gedefinieerd. 
-Denk aan het verwijzen naar bronnen en het bieden van een toelichting bij een begrip. 
+Denk aan het verwijzen naar bronnen en het geven van een uitleg in begrijpelijke taal bij een begrip («uitleg», `rdfs:comment`). 
 Deze toevoegingen zijn optioneel en vormen geen hindernis in het kader van de overstap. 
 Als deze toevoegingen al onderdeel zijn van het SKOS-begrip, maar niet conform NL-SBB blijken, is hier wel een omzetting noodzakelijk. Een voorbeeld zou zijn dat een andere taalbinding is gekozen voor «heeft bron».
 
@@ -150,7 +150,7 @@ Een SKOS-begrip (let op dat we het hier over de beschrijving hebben) is niet dir
 Met name bij het opnemen van een extern begrip in je eigen begrippenkader zal dit een aandachtspunt zijn.
 Wanneer problemen ontstaan, kan (met passende metadatering) het SKOS-begrip aangevuld worden om fouten te mitigeren.
 Er kan ook gekozen worden om een nieuw begrip te beschrijven dat geharmoniseerd wordt (bijvoorbeeld met «is exact overeenkomstig») met het externe begrip. 
-Voor externe begrippen kan er ook gekozen worden om deze niet te valideren. De best practice hierin moet nog gekozen worden.
+Het SHACL-profiel van NL-SBB houdt hier vanaf versie 1.0.1 rekening mee: een relatie naar een begrip dat in de gevalideerde data geen type heeft, wordt opgevat als verwijzing naar een extern begrip en levert geen melding op. Wordt het externe begrip wél als `skos:Concept` in de eigen data opgenomen, dan gelden daarvoor de eisen van NL-SBB.
 Bij het verbinden van begrippenkaders is het belangrijkste dat het conceptueel model (de ontologie) aansluit. En dat is het geval.
 
 ### 3. Kunnen anderen (die geen NL-SBB gebruiken) mijn begrippen nog gebruiken?
