@@ -41,10 +41,10 @@ In de NORA werkgroep begrippenkader hanteert men de [ISO 704](https://www.iso.or
 #### Typen definities
 Vanuit de Stichting SURVUZ zijn de volgende typen definities aangedragen:
 * **Type 1**: Typering (genus/differentia) - BEGRIP is afgeleide van hoger liggend begrip, met onderscheidend kenmerk X (overerving, generalisatie, supertype).
-  * Voorbeeld: bles. Een paard met een wit voorhoofd. Palomino. Een paard met witte stippen.
+  * Voorbeeld: bles. Een paard met een wit voorhoofd. Palomino. Een paard met een goudgele vacht en lichte manen en staart.
   * Afgedekte relaties uit NL-SBB: «heeft bovenliggend begrip», «is specialisatie van», «is exemplaar van», «is categorie van», «is onderdeel van».
 * **Type 2**: Samenstelling (totum/dividere) - BEGRIP is een geheel dat is beschreven door de delen te beschrijven (hiërarchie, geheel/deel).
-  * Voorbeeld: organisatie. Een stel mensen die dingen doen met spullen. 
+  * Voorbeeld: organisatie. Een geheel van mensen en middelen dat samenwerkt om een gemeenschappelijk doel te bereiken. 
   * Voorbeeld: trein. Een locomotief met wagons.
   * Afgedekte relaties uit NL-SBB: «omvat»
 * **Type 3**: Onderdeel (pars) - BEGRIP is een onderdeel van een groter geheel, met een specifiek kenmerk.
@@ -82,7 +82,7 @@ De landelijke verzameling bevat alleen goedgekeurde begripsdefinities. Definitie
 Een begrip wordt gebruikt in het dagelijks politiewerk of de ondersteuning daarvan. Begrippen komen voor in geformuleerde bedrijfsregels. De termen (woorden of een samenstel van woorden) uit een bedrijfsregel duiden de begrippen aan. Voor de juiste interpretatie van een bedrijfsregel is het noodzakelijk dat gehanteerde termen eenduidig gedefinieerd zijn. Pas als iedereen een term op dezelfde manier interpreteert kan de bedrijfsregel op de juiste manier worden toegepast.
 In het volgende voorbeeld van een bedrijfsregel zijn de termen onderstreept die een (te definiëren) begrip aanduiden. Zonder goede definities zal het onmogelijk blijken om de bedrijfsregel overal op dezelfde manier toe te passen.
 
-‘Een verdachte die is aangehouden wegens het begaan van een strafbaar feit moet onmiddellijk worden voorgeleid aan een hulpofficier van justitie.’
+‘Een <u>verdachte</u> die is <u>aangehouden</u> wegens het begaan van een <u>strafbaar feit</u> moet onmiddellijk worden <u>voorgeleid</u> aan een <u>hulpofficier van justitie</u>.’
 
 In de praktijk blijkt het heel lastig om goede definities op te stellen. Dit voorschrift helpt de opsteller om een definitie zodanig te formuleren dat deze eenduidig is, geen overtollige informatie bevat en een juiste weergave is van de politiewerkelijkheid.
 
