@@ -44,7 +44,7 @@ Vanuit de Stichting SURVUZ zijn de volgende typen definities aangedragen:
   * Voorbeeld: bles. Een paard met een wit voorhoofd. Palomino. Een paard met een goudgele vacht en lichte manen en staart.
   * Afgedekte relaties uit NL-SBB: «heeft bovenliggend begrip», «is specialisatie van», «is exemplaar van», «is categorie van», «is onderdeel van».
 * **Type 2**: Samenstelling (totum/dividere) - BEGRIP is een geheel dat is beschreven door de delen te beschrijven (hiërarchie, geheel/deel).
-  * Voorbeeld: organisatie. Een geheel van mensen en middelen dat samenwerkt om een gemeenschappelijk doel te bereiken. 
+  * Voorbeeld: organisatie. Een groep mensen die met middelen samenwerkt. 
   * Voorbeeld: trein. Een locomotief met wagons.
   * Afgedekte relaties uit NL-SBB: «omvat»
 * **Type 3**: Onderdeel (pars) - BEGRIP is een onderdeel van een groter geheel, met een specifiek kenmerk.
