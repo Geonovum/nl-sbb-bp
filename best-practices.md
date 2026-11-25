@@ -101,7 +101,7 @@ Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (vers
 </p>
 
 In ieder scenario willen we voldoende informatie hebben over de bron zodat we deze kunnen vinden. Dit kan op basis van een *<a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-url">url</a>* of een *<a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-bronverwijzing">bronverwijzing</a>*. 
-In het eenvoudigste geval is de bron vindbaar op het web en is het voldoende om als bronverwijzing de bijbehorende url op te nemen. De verwachting is dat middels deze url een mensleesbare representatie van het document gevonden kan worden. Dit kan er als volgt uitzien.
+In het eenvoudigste geval is de bron vindbaar op het web en is het voldoende om de bijbehorende url op te nemen als waarde van *<a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-heeft-bron">heeft bron</a>* (<code>dct:source</code>). De verwachting is dat middels deze url een mensleesbare representatie van het document gevonden kan worden. Dit kan er als volgt uitzien.
 
 <pre class="example">
 ex:ingezetene a skos:Concept ;
@@ -111,9 +111,9 @@ ex:ingezetene a skos:Concept ;
 
 Op deze manier is goed aangegeven waar de betekenis van het begrip (gedocumenteerd als definitie) op gebaseerd is. Verder is er geen informatie over de bron. Wanneer de bron is beschreven in RDF is deze informatie er wel en kan dit meegenomen worden in de interpretatie van het begrip. 
 
-Wanneer een bron als linked data op het web ontsloten is neem je als waarde van bronverwijzing de URI van de bron. Dit kan bijvoorbeeld een instantie van <code>foaf:Document</code> of <code>dct:BibliographicResource</code> zijn. Hoe deze precies is beschreven, maakt voor de bronverwijzing niet uit, maar binnen dit profiel wordt de [specificatie voor bronnen](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#specificatie-brondocument) aangeraden.
+Wanneer een bron als linked data op het web ontsloten is neem je als waarde van *<a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-heeft-bron">heeft bron</a>* de URI van de bron. Dit kan bijvoorbeeld een instantie van <code>foaf:Document</code> of <code>dct:BibliographicResource</code> zijn. Hoe deze precies is beschreven, maakt voor *heeft bron* niet uit, maar binnen dit profiel wordt de [specificatie voor bronnen](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#specificatie-brondocument) aangeraden.
 
-Het komt ook voor dat de bron niet vindbaar is op het web en/of niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken. De beschrijving bestaat minimaal uit een aanduiding van het brondocument en de naam. Als aanduiding van het brondocument kunnen in Linked data URI's of blank nodes gebruikt worden. Deze aanduiding is een directe identificatie van het brondocument (zie ook [Fundamentals of Linked Data Modeling](https://bp4mc2.org/modeling/)). De beheerder van het begrip maakt een URI (of blank node) voor het brondocument dat hij gebruikt, maar waarvan hij niet de eigenaar is. Dit is conform een van de basisprincipes van Linked Data, *Anybody can say anything about anything*. Deze URI kan alleen niet direct gebruikt worden om een mensleesbaar document te vinden. Wanneer de bron vindbaar is op het web kan foaf:page (<a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-url">url</a>) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation (<a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-bronverwijzing">bronverwijzing</a>) gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een <a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-url">url</a> als een <a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-bronverwijzing">bronverwijzing</a> kent.
+Het komt ook voor dat de bron niet vindbaar is op het web en/of niet als linked data ontsloten is. In dat geval kan de beheerder van het begrip zelf een beschrijving van de bron maken. De beschrijving bestaat minimaal uit een aanduiding van het brondocument en de naam. Als aanduiding van het brondocument kunnen in Linked data URI's of blank nodes gebruikt worden. Deze aanduiding is een directe identificatie van het brondocument (zie ook [Fundamentals of Linked Data Modeling](https://bp4mc2.org/modeling/)). De beheerder van het begrip maakt een URI (of blank node) voor het brondocument dat hij gebruikt, maar waarvan hij niet de eigenaar is. Dit is conform een van de basisprincipes van Linked Data, *Anybody can say anything about anything*. Deze URI kan alleen niet direct gebruikt worden om een mensleesbaar document te vinden. Wanneer de bron vindbaar is op het web kan foaf:page (<a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-url">url</a>) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation (<a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-bronverwijzing">bronverwijzing</a>) gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een <a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-url">url</a> als een <a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-bronverwijzing">bronverwijzing</a> kent. De url van een beschreven brondocument hoort in foaf:page (<a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#dfn-url">url</a>), niet in de bronverwijzing: de bronverwijzing is een citeerregel in tekst (een literal), geen link.
 
 <div class="practice" id="conv-lido"><p class="practicedesc"><span class="practicelab">Conventie verwijzing wet- en regelgeving</span>Voor verwijzingen naar wet- en regelgeving moet <a href='http://wetten.overheid.nl/BWBR0005730/2022-04-01/#Hoofdstuk3_Paragraaf3.3'>§ 3.3 Aanwijzingen voor de regelgeving</a> gevolgd worden. Met behulp van de Linktool van LiDO is het eenvoudig om verwijzingen te maken die aan de aanwijzingen voor de regelgeving voldoen.</p></div>
 
@@ -124,8 +124,9 @@ ex:ingezetene a skos:Concept ;
   skos:definition "Zij die hun werkelijke woonplaats in de gemeente hebben"@nl ;
   dct:source ex:GemeentewetArt2 .
 
-ex:GemeentewetArt2 a dct:BibliographicResource ;
-  rdfs:label "Gemeentewet Art. 2" ;
+ex:GemeentewetArt2 a foaf:Document, dct:BibliographicResource ;
+  dct:title "Gemeentewet Art. 2"@nl ;
+  rdfs:label "Gemeentewet Art. 2"@nl ;
   foaf:page &lt;https://wetten.overheid.nl/jci1.3:c:BWBR0005416&titeldeel=I&artikel=2&z=2022-05-01&g=2022-05-01&gt; ;
   rdfs:comment "In deze wet wordt verstaan onder ingezetenen: zij die hun werkelijke woonplaats in de gemeente hebben."@nl ;
   dct:type &lt;http://id.loc.gov/vocabulary/marcgt/leg&gt; .
@@ -134,12 +135,13 @@ ex:GemeentewetArt2 a dct:BibliographicResource ;
 De beschrijving van een niet op het web vindbare bron waarbij gekozen is voor het gebruik van een blank node kan er als volgt uitzien;
 <pre class="example">
 ex:Flora a skos:Concept ;
-  dct:source [ a dct:BibliographicResource ;
-               rdfs:label "Heukels' Flora van Nederland" ;
+  dct:source [ a foaf:Document, dct:BibliographicResource ;
+               dct:title "Heukels' Flora van Nederland"@nl ;
+               rdfs:label "Heukels' Flora van Nederland"@nl ;
                dct:bibliographicCitation "Van der Meijden, R. (2005): Heukels' Flora van Nederland. Wolters-Noordhoff, Groningen/Houten (23e druk), 685 pp." ;
                dct:type &lt;http://id.loc.gov/vocabulary/marcgt/boo&gt; ] .
 </pre>
-Het nadeel van blank nodes is dat de bronbeschrijving niet hergebruikt kan worden, voor iedere bronverwijzing naar een bepaalde bron moet de beschrijving opnieuw gemaakt worden.
+Het nadeel van blank nodes is dat de bronbeschrijving niet hergebruikt kan worden, voor ieder begrip dat naar een bepaalde bron verwijst, moet de beschrijving opnieuw gemaakt worden.
 
 ### Typering
 De bron zelf kan op verschillende manieren beschreven worden, dat ligt immers bij de bronhouder. Er bestaan verschillende standaardvocabulaires die een oplossing hebben voor het beschrijven van en verwijzen naar bronnen, ook zonder de term bron te gebruiken. Denk bijvoorbeeld aan [[DCTERMS]], [FRBR](http://www.sparontologies.net/ontologies/frbr), [[[WETTENNL]]] en [[FOAF]], maar ook nationale of sectorale standaarden. Er is geen de facto standaard die van toepassing is op wat binnen dit profiel onder bron wordt verstaan. Om die reden leggen we geen restricties op de typering van de resource die we als bron voor een begrip aanmerken.
