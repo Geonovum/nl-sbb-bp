@@ -184,7 +184,7 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
     color: white;
     white-space: nowrap;
     z-index: 1;
-    background-color: #FF0000;
+    background-color: #EE0000;
   }
 </style>
 <script type="text/javascript">
@@ -206,7 +206,8 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
       "id": "Geonovum",
       "height": 67,
       "width": 132,
-      "url": "https://www.geonovum.nl/geo-standaarden"
+      "url": "https://www.geonovum.nl/geo-standaarden",
+      "ico": "https://docs.geostandaarden.nl/media/Geonovum.ico"
     }
   ],
   "postProcess": [
@@ -255,7 +256,6 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
       "vv": "Proposed recommendation",
       "def": "Recommendation",
       "ld": "Living document",
-      "basis": "Document",
       "no": "Norm",
       "st": "Standard",
       "im": "Information model",
@@ -272,7 +272,6 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
       "vv": "Versie ter vaststelling",
       "def": "Vastgestelde versie",
       "ld": "Levend document",
-      "basis": "Document",
       "no": "Norm",
       "st": "Standaard",
       "im": "Informatiemodel",
@@ -291,7 +290,6 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
       "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
       "cv": "Dit is een consultatieversie.",
       "vv": "Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
-      "basis": "Dit is een document zonder officiële status.",
       "ld": "Dit is een levend document dat regelmatig gewijzigd wordt."
     },
     "en": {
@@ -300,16 +298,14 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
       "wv": "This is a working draft that can be changed, removed or replaced by other documents at any time. It is not a stable document.",
       "cv": "This is a stable draft, published for public comment.",
       "vv": "This is the final draft of this document. Edits resulting from consultations have been applied.",
-      "basis": "This document has no official standing.",
       "ld": "This is a living document, which is updated regularly."
     }
   },
   "labelColor": {
     "def": "#045D9F",
-    "wv": "#FF0000",
+    "wv": "#EE0000",
     "cv": "#045D9F",
     "vv": "#045D9F",
-    "basis": "#80CC28",
     "ld": "#80CC28"
   },
   "licenses": {
@@ -317,7 +313,7 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
       "name": "Creative Commons 0 Public Domain Dedication",
       "short": "CC0",
       "url": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "image": "https://docs.geostandaarden.nl/media/CC-Licentie.svg"
+      "image": "https://docs.geostandaarden.nl/media/cc-zero.svg"
     },
     "cc-by": {
       "name": "Creative Commons Attribution 4.0 International Public License",
@@ -439,7 +435,7 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
     <h2>
       Geonovum Handreiking<br>
       Werkversie
-      <time class="dt-published" datetime="2026-10-20">20 oktober 2026</time>
+      <time class="dt-published" datetime="2026-11-25">25 november 2026</time>
     </h2>
     <dl>
       
@@ -554,12 +550,12 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
 <p>Vanuit de Stichting SURVUZ zijn de volgende typen definities aangedragen:</p>
 <ul>
 <li><strong>Type 1</strong>: Typering (genus/differentia) - BEGRIP is afgeleide van hoger liggend begrip, met onderscheidend kenmerk X (overerving, generalisatie, supertype).<ul>
-<li>Voorbeeld: bles. Een paard met een wit voorhoofd. Palomino. Een paard met witte stippen.</li>
+<li>Voorbeeld: bles. Een paard met een wit voorhoofd. Palomino. Een paard met een goudgele vacht en lichte manen en staart.</li>
 <li>Afgedekte relaties uit NL-SBB: «heeft bovenliggend begrip», «is specialisatie van», «is exemplaar van», «is categorie van», «is onderdeel van».</li>
 </ul>
 </li>
 <li><strong>Type 2</strong>: Samenstelling (totum/dividere) - BEGRIP is een geheel dat is beschreven door de delen te beschrijven (hiërarchie, geheel/deel).<ul>
-<li>Voorbeeld: organisatie. Een stel mensen die dingen doen met spullen. </li>
+<li>Voorbeeld: organisatie. Een groep mensen die met middelen samenwerkt. </li>
 <li>Voorbeeld: trein. Een locomotief met wagons.</li>
 <li>Afgedekte relaties uit NL-SBB: «omvat»</li>
 </ul>
@@ -596,7 +592,7 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
 <p><strong>Achtergrond</strong></p>
 <p>Een begrip wordt gebruikt in het dagelijks politiewerk of de ondersteuning daarvan. Begrippen komen voor in geformuleerde bedrijfsregels. De termen (woorden of een samenstel van woorden) uit een bedrijfsregel duiden de begrippen aan. Voor de juiste interpretatie van een bedrijfsregel is het noodzakelijk dat gehanteerde termen eenduidig gedefinieerd zijn. Pas als iedereen een term op dezelfde manier interpreteert kan de bedrijfsregel op de juiste manier worden toegepast.
 In het volgende voorbeeld van een bedrijfsregel zijn de termen onderstreept die een (te definiëren) begrip aanduiden. Zonder goede definities zal het onmogelijk blijken om de bedrijfsregel overal op dezelfde manier toe te passen.</p>
-<p>‘Een verdachte die is aangehouden wegens het begaan van een strafbaar feit moet onmiddellijk worden voorgeleid aan een hulpofficier van justitie.’</p>
+<p>‘Een <u>verdachte</u> die is <u>aangehouden</u> wegens het begaan van een <u>strafbaar feit</u> moet onmiddellijk worden <u>voorgeleid</u> aan een <u>hulpofficier van justitie</u>.’</p>
 <p>In de praktijk blijkt het heel lastig om goede definities op te stellen. Dit voorschrift helpt de opsteller om een definitie zodanig te formuleren dat deze eenduidig is, geen overtollige informatie bevat en een juiste weergave is van de politiewerkelijkheid.</p>
 <p>Dit voorschrift gaat uit van de begrippen zoals gedefinieerd in het SMP/SCM Metamodel.</p>
 </section></section><section id="hierarchische-relaties"><div class="header-wrapper"><h4 id="x1-1-3-hierarchische-relaties"><bdi class="secno">1.1.3 </bdi>Hiërarchische relaties</h4><a class="self-link" href="#hierarchische-relaties" aria-label="Permalink for Section 1.1.3"></a></div>
@@ -955,7 +951,7 @@ Dit zijn «is specialisatie van», «is generalisatie van», «is onderdeel van�
 <td>code</td>
 <td>skos:notation</td>
 <td>sh:Literal</td>
-<td>typed literal</td>
+<td>rdfs:Resource (conventie: typed literal)</td>
 <td>0..*</td>
 <td>0..*</td>
 </tr>
@@ -994,7 +990,7 @@ Dit zijn «is specialisatie van», «is generalisatie van», «is onderdeel van�
 <tr>
 <td><strong>heeft bron</strong></td>
 <td>dct:source</td>
-<td>foaf:Document</td>
+<td>rdfs:Resource (aanbevolen: foaf:Document)</td>
 <td>--</td>
 <td>0..*</td>
 <td>--</td>
@@ -1208,9 +1204,9 @@ Dit zijn «is specialisatie van», «is generalisatie van», «is onderdeel van�
 <li>Een collectie <em class="rfc2119">MOET</em> een naam hebben. SKOS doet hier geen uitspraken over.</li>
 <li>Een collectie <em class="rfc2119">MAG</em> een uitleg hebben. SKOS doet hier geen uitspraken over.</li>
 </ul>
-<p>Aanscherpingen</p>
+<p>Beperkingen</p>
 <ul>
-<li>NL-SBB doet geen uitspraken over geordende collecties. SKOS wel.</li>
+<li>NL-SBB kent geen geordende collecties (<code>skos:OrderedCollection</code> met <code>skos:memberList</code>). SKOS wel.</li>
 </ul>
 <table>
 <thead>
@@ -1321,7 +1317,7 @@ Je kan er daarom niet vanuit gaan dat een willekeurig begrip waarvan de beschrij
 Met name de aanscherpingen, die reeds benoemd zijn, kunnen aanvullende aandacht vragen.
 Wanneer een SKOS-begrip niet conform het toepassingsprofiel van NL-SBB blijkt (bijvoorbeeld omdat deze geen definitie heeft) is menselijke tussenkomst nodig om de problemen op te lossen.</p>
 <p>Daarnaast biedt NL-SBB kaders voor het vastleggen van informatie die niet in SKOS worden gedefinieerd. 
-Denk aan het verwijzen naar bronnen en het bieden van een toelichting bij een begrip. 
+Denk aan het verwijzen naar bronnen en het geven van een uitleg in begrijpelijke taal bij een begrip («uitleg», <code>rdfs:comment</code>). 
 Deze toevoegingen zijn optioneel en vormen geen hindernis in het kader van de overstap. 
 Als deze toevoegingen al onderdeel zijn van het SKOS-begrip, maar niet conform NL-SBB blijken, is hier wel een omzetting noodzakelijk. Een voorbeeld zou zijn dat een andere taalbinding is gekozen voor «heeft bron».</p>
 <p>Als we niet vanuit data maar vanuit de presentatie kijken, zien we dat ook hier impact is.
@@ -1338,7 +1334,7 @@ Een SKOS-begrip (let op dat we het hier over de beschrijving hebben) is niet dir
 Met name bij het opnemen van een extern begrip in je eigen begrippenkader zal dit een aandachtspunt zijn.
 Wanneer problemen ontstaan, kan (met passende metadatering) het SKOS-begrip aangevuld worden om fouten te mitigeren.
 Er kan ook gekozen worden om een nieuw begrip te beschrijven dat geharmoniseerd wordt (bijvoorbeeld met «is exact overeenkomstig») met het externe begrip. 
-Voor externe begrippen kan er ook gekozen worden om deze niet te valideren. De best practice hierin moet nog gekozen worden.
+Het SHACL-profiel van NL-SBB houdt hier vanaf versie 1.0.1 rekening mee: een relatie naar een begrip dat in de gevalideerde data geen type heeft, wordt opgevat als verwijzing naar een extern begrip en levert geen melding op. Wordt het externe begrip wél als <code>skos:Concept</code> in de eigen data opgenomen, dan gelden daarvoor de eisen van NL-SBB.
 Bij het verbinden van begrippenkaders is het belangrijkste dat het conceptueel model (de ontologie) aansluit. En dat is het geval.</p>
 </section><section id="x3-kunnen-anderen-die-geen-nl-sbb-gebruiken-mijn-begrippen-nog-gebruiken"><div class="header-wrapper"><h4 id="x2-2-3-3-kunnen-anderen-die-geen-nl-sbb-gebruiken-mijn-begrippen-nog-gebruiken"><bdi class="secno">2.2.3 </bdi>3. Kunnen anderen (die geen NL-SBB gebruiken) mijn begrippen nog gebruiken?</h4><a class="self-link" href="#x3-kunnen-anderen-die-geen-nl-sbb-gebruiken-mijn-begrippen-nog-gebruiken" aria-label="Permalink for Section 2.2.3"></a></div>
 <p>Hergebruik van een begrip uit een NL-SBB-beschrijving binnen een SKOS-begrip is altijd mogelijk.
