@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Consultatieversie Best Practices en aanvullingen voor NL-SBB
+    url: https://docs.geostandaarden.nl/nl-sbb/cv-hr-bp-20261125/
+    about: Lees eerst de consultatieversie van de best practices waarop de consultatie betrekking heeft.
+  - name: Reactie op de standaard, het SHACL-profiel of de thesaurus
+    url: https://github.com/Geonovum/NL-SBB/issues/new/choose
+    about: Reacties op NL-SBB zelf dient u in bij de repository NL-SBB.
+  - name: Contact met de beheerder
+    url: https://www.geonovum.nl/contact
+    about: "Liever niet via GitHub reageren, of een vraag vooraf? Mail naar f.terpstra@geonovum.nl."
